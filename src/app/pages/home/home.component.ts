@@ -8,5 +8,22 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  
+  constructor() {}
+  
+  goToAboutMe() {
+    console.log("Pincha en Sobre mí");
+  }
 
+  goToExperience() {
+    console.log("Pincha en Formación y Experiencia");
+  }
+
+  goToSkills() {
+    console.log("Pincha en Herramientas");
+  }
+
+  goToContact() {
+    console.log("Pincha en Contacto");
+  }
 }

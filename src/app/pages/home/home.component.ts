@@ -23,7 +23,7 @@ export class HomeComponent {
   }
 
   goToSkills() {
-    console.log("Pincha en Herramientas");
+    this.router.navigate(['/skills']);
   }
 
   goToContact() {

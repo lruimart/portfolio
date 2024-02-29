@@ -13,9 +13,10 @@ export const routes: Routes = [
         path: 'experience',
         loadComponent: () => import('./pages/home/sections/experience/experience.component').then(c => c.ExperienceComponent)
     },
-    // {
-    //     path: 'skills'
-    // },
+    {
+        path: 'skills',
+        loadComponent: () => import('./pages/home/sections/skills/skills.component').then(c => c.SkillsComponent)
+    },
     // {
     //     path: 'contact'
     // },

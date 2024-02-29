@@ -19,7 +19,7 @@ export class HomeComponent {
   }
 
   goToExperience() {
-    console.log("Pincha en Formación y Experiencia");
+    this.router.navigate(['/experience']);
   }
 
   goToSkills() {

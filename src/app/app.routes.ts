@@ -17,9 +17,10 @@ export const routes: Routes = [
         path: 'skills',
         loadComponent: () => import('./pages/home/sections/skills/skills.component').then(c => c.SkillsComponent)
     },
-    // {
-    //     path: 'contact'
-    // },
+    {
+        path: 'contact',
+        loadComponent: () => import('./pages/home/sections/contact/contact.component').then(c => c.ContactComponent)
+    },
     {
         path: '',
         redirectTo: 'home',

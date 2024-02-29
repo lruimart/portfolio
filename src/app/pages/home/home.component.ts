@@ -27,6 +27,6 @@ export class HomeComponent {
   }
 
   goToContact() {
-    console.log("Pincha en Contacto");
+    this.router.navigate(['/contact']);
   }
 }

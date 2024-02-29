@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterOutlet
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
   
-  constructor() {}
+  constructor(private router: Router) {}
   
   goToAboutMe() {
-    console.log("Pincha en Sobre mí");
+    this.router.navigate(['/about-me']);
   }
 
   goToExperience() {

@@ -18,4 +18,12 @@ export class AboutMeComponent {
     this.router.navigate(['/home']);
   }
 
+  redirectToContact() {
+    this.router.navigate(['/contact']);
+  }
+
+  redirectToExperience() {
+    this.router.navigate(['/experience']);
+  }
+
 }

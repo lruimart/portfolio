@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+}
+
+.about_me_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    // background-color: lightgrey;
+    margin: 50px;
+    padding: 20px;
+}
+
+.about_me_title {
+    // background-color: violet;
+    margin-bottom: 10px;
+}
+
+.about_me_txt {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.first_descript, .second_descript, .third_descript, .fourth_descript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 3px 3px 2px;
+    transition: transform 0.3s ease;
+}
+
+.first_descript:hover, .second_descript:hover, .third_descript:hover, .fourth_descript:hover {
+    transform: scale(1.1);
+}
+
+.descript_txt {
+    text-align: center;
+}
+
+.redirect_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 170px;
+}
+
+.redirect_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.redirect_contact, .redirect_experience {
+    display: flex;
+    cursor: pointer;
+}
+
+.back_txt, .contact_txt, .experience_txt {
+    font-size: 12px;
+}
+
+.back_arrow, .contact_arrow, .experience_arrow {
+    display: flex;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.contact_arrow, .experience_arrow {
+    margin-top: 5px;
+}
+
+// .back_btn, .contact_btn, .experience_btn {
+//     cursor: pointer;
+// }

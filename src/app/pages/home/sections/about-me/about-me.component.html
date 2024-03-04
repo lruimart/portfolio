@@ -1,2 +1,37 @@
-<p>about-me works!</p>
-<button (click)="backToHome()">Volver a Home</button>
+<div class="container">
+    <div class="about_me_cont">
+        <div class="about_me_title">
+            <p class="about_me_txt">SOBRE MÍ</p>
+        </div>
+        <div class="about_me_description">
+            <div class="first_descript">
+                <p class="descript_txt">Soy responsable y disciplinada, con iniciativa y orientada al detalle.</p>
+            </div>
+            <div class="second_descript">
+                <p class="descript_txt">Adaptable ante los cambios e imprevistos, tomo la dirección y avanzo.</p>
+            </div>
+            <div class="third_descript">
+                <p class="descript_txt">Utilizo la experiencia y aprendizaje del pasado para enfocar el futuro.</p>
+            </div>
+            <div class="fourth_descript">
+                <p class="descript_txt">Soy conciliadora y práctica, e intento aportar armonía a los grupos con los que trabajo.</p>
+            </div>
+        </div>
+        <div class="redirect_container">
+            <div class="back_container" (click)="backToHome()">
+                <img class="back_arrow" src="../../../../../assets/img/left-arrow.svg">
+                <p class="back_txt">Volver</p>
+            </div>
+            <div class="redirect_options">
+                <div class="redirect_contact" (click)="redirectToContact()">
+                    <img class="contact_arrow" src="../../../../../assets/img/left-arrow.svg">
+                    <p class="contact_txt">Ir a Contacto</p>
+                </div>
+                <div class="redirect_experience" (click)="redirectToExperience()">
+                    <p class="experience_txt">Ir a Formación y Experiencia</p>
+                    <img class="experience_arrow" src="../../../../../assets/img/right-arrow.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

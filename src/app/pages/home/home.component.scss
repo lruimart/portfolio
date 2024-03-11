@@ -1,7 +1,4 @@
 .container {
-    background-color: lightblue;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +33,7 @@
     background-color: aquamarine;
     border-radius: 5px;
     margin: 10px;
+    box-shadow: 3px 3px 8px;
     transition: transform 0.3s ease;
 }
 

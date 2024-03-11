@@ -18,4 +18,12 @@ export class ExperienceComponent {
     this.router.navigate(['/home']);
   }
 
+  redirectToAboutMe() {
+    this.router.navigate(['/about-me']);
+  }
+
+  redirectToSkills() {
+    this.router.navigate(['/skills']);
+  }
+
 }

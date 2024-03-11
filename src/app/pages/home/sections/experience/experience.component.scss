@@ -1,0 +1,158 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.title_txt {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.training_experience_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.training_container, .experience_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 8px;
+}
+
+.training_title_txt, .nttdata_title_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.training_descript_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nttdata_experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nttdata_projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infored, .orientexpress, .segurcaixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: #DFBDFC;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.infored:hover, .orientexpress:hover, .segurcaixa:hover {
+    background-color: #FCE7BD;
+}
+
+.infored_title_txt, .orientexpress_title_txt, .segurcaixa_title_txt {
+    font-weight: bold;
+}
+
+.redirect_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 170px;
+}
+
+.redirect_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.redirect_about_me, .redirect_skills {
+    display: flex;
+    cursor: pointer;
+}
+
+.back_txt, .about_me_txt, .skills_txt {
+    font-size: 12px;
+}
+
+.back_arrow, .about_me_arrow, .skills_arrow {
+    display: flex;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.about_me_arrow, .skills_arrow {
+    margin-top: 5px;
+}
+
+// Subrayado de izquierda a derecha en las flechas.
+
+.back_container .back_txt,
+.redirect_about_me .about_me_txt,
+.redirect_skills .skills_txt {
+    position: relative;
+    display: inline-block;
+}
+
+.back_container .back_txt::before,
+.redirect_about_me .about_me_txt::before,
+.redirect_skills .skills_txt::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.back_container:hover .back_txt::before,
+.redirect_about_me:hover .about_me_txt::before,
+.redirect_skills:hover .skills_txt::before {
+    width: 100%;
+}

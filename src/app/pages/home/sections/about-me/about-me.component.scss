@@ -2,9 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
-    width: 100%;
-    height: 100%;
 }
 
 .about_me_cont {
@@ -14,13 +11,11 @@
     justify-content: center;
     width: 500px;
     height: 500px;
-    // background-color: lightgrey;
     margin: 50px;
     padding: 20px;
 }
 
 .about_me_title {
-    // background-color: violet;
     margin-bottom: 10px;
 }
 
@@ -37,12 +32,12 @@
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    box-shadow: 3px 3px 2px;
+    box-shadow: 3px 3px 8px;
     transition: transform 0.3s ease;
 }
 
 .first_descript:hover, .second_descript:hover, .third_descript:hover, .fourth_descript:hover {
-    transform: scale(1.1);
+    background-color: #DFBDFC;
 }
 
 .descript_txt {
@@ -94,6 +89,30 @@
     margin-top: 5px;
 }
 
-// .back_btn, .contact_btn, .experience_btn {
-//     cursor: pointer;
-// }
+// Subrayado de izquierda a derecha en las flechas.
+
+.back_container .back_txt,
+.redirect_contact .contact_txt,
+.redirect_experience .experience_txt {
+    position: relative;
+    display: inline-block;
+}
+
+.back_container .back_txt::before,
+.redirect_contact .contact_txt::before,
+.redirect_experience .experience_txt::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.back_container:hover .back_txt::before,
+.redirect_contact:hover .contact_txt::before,
+.redirect_experience:hover .experience_txt::before {
+    width: 100%;
+}
